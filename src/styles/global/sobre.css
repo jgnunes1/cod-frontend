@@ -1,0 +1,32 @@
+.sobre h1 {
+    font-size: 5rem;
+    padding: 0;
+    margin: 0;
+    color: #252525 !important;
+}
+
+.sobre h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 100;
+    color: var(--texto-primaria);
+}
+
+.sobre div {
+    font-size: .8rem;
+    padding-top: 2%
+}
+
+.sobre img {
+    padding-top: 5%;
+    padding-bottom: 2%
+}
+
+/* @media (prefers-color-scheme: dark) { */
+    body.dark .sobre h1 {
+    font-size: 5rem;
+    padding: 0;
+    margin: 0;
+    color: #fff !important;
+}
+/* } */

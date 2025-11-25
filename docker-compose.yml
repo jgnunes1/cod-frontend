@@ -1,0 +1,30 @@
+services:
+  node:
+    container_name: react_base_frontend
+    build:
+      context: .
+      dockerfile: docker/react.Dockerfile
+    ports:
+      - "3000:3000"
+      # para 'vite preview'
+      - "3001:3001"
+      # para o json-server
+      - "5000:5000"
+    volumes:
+      - .:/app
+    command: sh -c "npm install && npm run dev-docker"
+    networks:
+      - frontend
+    environment:
+      # Usando proxy-reverso do codekitchen/dinghy-http-proxy
+      # @see https://git.dgti.uerj.br/depsen/wiki/-/blob/master/tecnologias/docker/docker_no_windows.md#proxy-reverso
+      VIRTUAL_HOST: supe.docker
+      # TODO não está sendo efetivo, apenas na porta 3000
+      VIRTUAL_PORT: 80
+networks:
+  frontend:
+    name: react_frontend
+    external: true
+  backend:
+    name: laravel_frontend
+    external: true

@@ -1,0 +1,11 @@
+{
+  "testEnvironment": "jsdom",
+  "transform": {
+    "^.+\\.jsx?$": "babel-jest",
+    "^.+\\.svg$": "./svgTransform.cjs"
+  },
+  "setupFilesAfterEnv": ["./setupTests.js"],
+  "moduleNameMapper": {
+    "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+  }
+}

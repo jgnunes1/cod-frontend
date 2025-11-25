@@ -1,0 +1,43 @@
+.usuario-quadro div {
+    min-width: fit-content;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+    border-radius: 4px;
+    background: #ffffff;
+    padding-left: 0.5rem !important;
+}   
+
+.usuario-quadro button {
+    display: none;
+}
+
+.dados_usuarios {
+    font-weight: 500;
+}
+
+/* @media (prefers-color-scheme: dark) { */
+
+body.dark .usuario-quadro div {
+    background: #2a2e34 ;
+    color: #ffffff;
+}
+/* } */
+
+
+.dados_usuarios {
+        color: #4b5563;
+        font-weight: 500;
+}
+
+@media screen and (max-width: 800px) {
+
+    .usuario-quadro .idunico, .usuario-quadro .perfil {
+        display: none;
+    }
+}

@@ -1,0 +1,14 @@
+.orientacoes {
+    margin-top: 1%;
+}
+
+.texto-orientacoes {
+    font-size: 0.75rem;
+    text-align: justify;
+    padding: 0.5%;
+}
+
+.texto-orientacoes:hover {
+    background-color: #cccccc55;
+
+}

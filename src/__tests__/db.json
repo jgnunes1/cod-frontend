@@ -1,0 +1,156 @@
+{
+  "ws_validar_login_ldap_v2_0": {
+    "status": "SUCCESS",
+    "message": "",
+    "errors": [],
+    "return": {
+      "numRecords": 1,
+      "data": {
+        "usuario": {
+          "id_pessoa": "12345",
+          "identificador": "12345678900",
+          "nome_completo": "Fulano de Tal",
+          "nome_social": "Maria de Tal",
+          "matricula_ldap": "54321"
+        }
+      }
+    }
+  },
+  "ws_obter_perfis_permissoes_usuario_v2_0": {
+    "status": "SUCCESS",
+    "message": "Operação realizada com sucesso",
+    "errors": [],
+    "return": {
+      "numRecords": 4,
+      "data": {
+        "usuario": {
+          "id_pessoa": "744064",
+          "id_uerj": "05836947724",
+          "id_sei": "00007440640",
+          "nome_civil": "Alexandre de Castro Trindade",
+          "nome_social": null
+        },
+        "sistema": {
+          "id_sistema": "3",
+          "codigo_sistema": "10000001000",
+          "sigla_sistema": "SGRH",
+          "nome_sistema": "Sistema de Gerenciamento de Recursos Humanos",
+          "manutencao": "N",
+          "ativo": "S"
+        },
+        "perfis": [
+          {
+            "id_perfil": "545",
+            "codigo_perfil": null,
+            "nome_perfil": "Acumulação de Cargos - operação",
+            "super_usuario": "N",
+            "telas": [
+              {
+                "codigo_tela": "IU-SGP-014-01",
+                "nome_tela": "Afastamento Externo",
+                "permissoes": [
+                  "alterar_afastamento_externo"
+                ]
+              }
+            ],
+            "id_unidade": "000000000000"
+          },
+          {
+            "id_perfil": "553",
+            "codigo_perfil": null,
+            "nome_perfil": "Usuário comum",
+            "super_usuario": "N",
+            "telas": [
+              {
+                "codigo_tela": "IU-SGRH-001-01",
+                "nome_tela": "Tela Exemplo",
+                "permissoes": [
+                  "sgrh_teste"
+                ]
+              }
+            ],
+            "id_unidade": "000000000000"
+          }
+        ],
+        "telas_consolidado": [
+          {
+            "codigo_tela": "IU-SGP-014-01",
+            "nome_tela": "Afastamento Externo",
+            "permissoes": [
+              "listar_afastamento_externo",
+              "excluir_afastamento_externo",
+              "consultar_afastamento_externo",
+              "incluir_afastamento_externo",
+              "alterar_afastamento_externo"
+            ]
+          },
+          {
+            "codigo_tela": "IU-SGP-013-01",
+            "nome_tela": "Cargo Externo",
+            "permissoes": [
+              "listar_cargo_externo",
+              "consultar_cargo_externo",
+              "alterar_cargo_externo",
+              "incluir_cargo_externo",
+              "excluir_cargo_externo"
+            ]
+          },
+          {
+            "codigo_tela": " IU-SGP-012-03",
+            "nome_tela": " Editar Acumulação de Cargos",
+            "permissoes": [
+              "consulta_acumulacao",
+              "alterar_acumulacao"
+            ]
+          },
+          {
+            "codigo_tela": "IU-SGP-016-01",
+            "nome_tela": "Extrato de Acumulação de Cargos por Servidor",
+            "permissoes": [
+              "relatorio_extrato_acumulacao"
+            ]
+          },
+          {
+            "codigo_tela": "IU-SGP-012-02",
+            "nome_tela": "Inserir Acumulação de Cargos",
+            "permissoes": [
+              "incluir_acumulacao"
+            ]
+          },
+          {
+            "codigo_tela": "IU-SGP-012-01",
+            "nome_tela": "Pesquisar de Acumulação de Cargos",
+            "permissoes": [
+              "pesquisar_acumulacoes"
+            ]
+          },
+          {
+            "codigo_tela": "IU-SIG-017-01",
+            "nome_tela": "Relação de Servidores com Acumulação de Cargos",
+            "permissoes": [
+              "relatorio_acumulacao_periodo"
+            ]
+          },
+          {
+            "codigo_tela": "IU-SGP-015-01",
+            "nome_tela": "Saída Externa",
+            "permissoes": [
+              "consultar_saida_externa",
+              "listar_saida_externa",
+              "incluir_saida_externa",
+              "alterar_saida_externa",
+              "excluir_saida_externa"
+            ]
+          },
+          {
+            "codigo_tela": "IU-SGRH-001-01",
+            "nome_tela": "Tela Exemplo",
+            "permissoes": [
+              "sgrh_teste"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
