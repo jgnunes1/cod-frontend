@@ -1,13 +1,16 @@
-
-import "./Menubar.css"; 
-//import "bootstrap/dist/css/bootstrap.min.css";
+// import "./Menubar.css"; 
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Menubar = () => {
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav
+            className="navbar navbar-expand-lg"
+            style={{ backgroundColor: "#e3f2fd" }}
+            data-bs-theme="light"
+        >
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">Navbar</a>
-                
+
                 <button
                     className="navbar-toggler"
                     type="button"
