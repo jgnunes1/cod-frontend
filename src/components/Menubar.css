@@ -1,0 +1,76 @@
+/* Barra de navegação */
+.navbar {
+    background: #0d6efd; /* azul Bootstrap melhorado */
+    padding: 0.7rem 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Marca do site */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #fff !important;
+}
+
+/* Links normais */
+.nav-link {
+    color: #e2e2e2 !important;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+/* Hover */
+.nav-link:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 5px rgba(255,255,255,0.4);
+}
+
+/* Link ativo */
+.nav-link.active {
+    color: #fff !important;
+    font-weight: 700;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    border-radius: 12px;
+    padding: 0.5rem;
+    border: none;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.dropdown-item {
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: background 0.15s;
+}
+
+.dropdown-item:hover {
+    background: #0d6efd;
+    color: #fff;
+}
+
+/* Botão de busca */
+.btn-outline-success {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-outline-success:hover {
+    background: #fff;
+    color: #0d6efd;
+}
+
+/* Caixa de pesquisa */
+.form-control {
+    border-radius: 10px;
+}
+
+/* Estilização do hambúrguer */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
