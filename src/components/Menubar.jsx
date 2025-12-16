@@ -1,13 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 // opcional, mas necessário para o botão toggler funcionar
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import { assets } from '../assets/assets.js';
+
 
 const Menubar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-2">
       <a className="navbar-brand" href="#">
         <img
-          src="https://www.svgrepo.com/show/303109/adobe-xd-logo.svg"
+          src={assets.logo}
           alt="Logo"
           height="40"
         />
@@ -48,7 +50,7 @@ const Menubar = () => {
           <li className="nav-item">
             <a className="nav-link" href="#">
               Categorias  
-            </a>
+            </a> 
           </li>
 
              <li className="nav-item">
