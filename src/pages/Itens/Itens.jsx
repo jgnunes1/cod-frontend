@@ -1,6 +1,8 @@
 const Itens = () => {
     return (
-        <div>Itens Page</div>
+        <div>
+            <h1>Itens Page</h1>
+        </div>
     )
 }
 export default Itens;

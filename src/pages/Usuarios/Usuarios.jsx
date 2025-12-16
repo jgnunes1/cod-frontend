@@ -1,6 +1,8 @@
 const Usuarios = () => {
     return (
-        <div>Usuários Page</div>
+        <div>
+            <h1>Usuários Page</h1>
+        </div>
     )
 }
 export default Usuarios;
