@@ -1,8 +1,18 @@
+import './Usuarios.css';
+
 const Usuarios = () => {
     return (
-        <div>
-            <h1>Usuários Page</h1>
-        </div>
+          <div className="usuarios-container text-light">
+
+            <div className="left-column">
+                Formulário de usuários
+            </div>
+             <div className="right-column">
+
+                lista de usuários
+                
+            </div>
+        </div>  
     )
 }
 export default Usuarios;
