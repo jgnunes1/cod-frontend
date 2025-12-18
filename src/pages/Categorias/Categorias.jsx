@@ -1,3 +1,5 @@
+import CategoriaForm from "../../components/CategoriaForm/CategoriaForm";
+import CategoriaList from "../../components/CategoriaList/CategoriaList";
 import "./Categorias.css";
 
 const Categorias = () => {
@@ -5,11 +7,11 @@ const Categorias = () => {
     return (
         <div className="categorias-container text-light">
             <div className="left-column">
-                Formulário de categorias
+                <CategoriaForm />
             </div>
              <div className="right-column">
 
-                lista de categorias
+              <CategoriaList />
                 
             </div>
         </div>  
