@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../../cod-backend"
+		},
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "automatic",
+		"java.configuration.updateBuildConfiguration": "interactive"
+	}
+}

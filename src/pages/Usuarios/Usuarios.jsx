@@ -1,3 +1,5 @@
+import UsuarioForm from '../../components/UsuarioForm/UsuarioForm';
+import UsuarioList from '../../components/UsuarioList/UsuarioList';
 import './Usuarios.css';
 
 const Usuarios = () => {
@@ -5,11 +7,13 @@ const Usuarios = () => {
           <div className="usuarios-container text-light">
 
             <div className="left-column">
-                Formulário de usuários
+
+               <UsuarioForm />
+
             </div>
              <div className="right-column">
 
-                lista de usuários
+                <UsuarioList />
                 
             </div>
         </div>  
