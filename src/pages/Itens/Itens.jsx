@@ -1,10 +1,11 @@
 import './Itens.css';
+import ItensForm from '../../components/ItensForm/ItensForm';
 
 const Itens = () => {
     return (
           <div className="itens-container text-light">
             <div className="left-column">
-                Formulário de itens
+                <ItensForm />
             </div>
              <div className="right-column">
 
